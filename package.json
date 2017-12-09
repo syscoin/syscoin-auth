@@ -1,0 +1,22 @@
+{
+  "name": "syscoin-auth",
+  "version": "1.0.0",
+  "description": "Contains authentication methods for syscoin offchain data storage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syscoin/syscoin-auth.git"
+  },
+  "keywords": [
+    "syscoin"
+  ],
+  "author": "Sebastian Schepis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/syscoin/syscoin-auth/issues"
+  },
+  "homepage": "https://github.com/syscoin/syscoin-auth#readme"
+}
