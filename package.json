@@ -21,6 +21,6 @@
   "homepage": "https://github.com/syscoin/syscoin-auth#readme",
   "dependencies": {
     "bitcore-lib": "0.13.19",
-    "bitcore-message": "^1.0.4"
+    "bitcore-message": "1.0.4"
   }
 }
