@@ -1,4 +1,5 @@
 const expect  = require("chai").expect;
+//comment
 
 const bitcore = require('bitcore-lib');
 const syscoinAuth = require('../index');
