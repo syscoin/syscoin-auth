@@ -48,6 +48,5 @@ module.exports.verifyHash = function(payload, hash) {
 };
 
 module.exports.verifySignature = function(hash, signedHash, address) {
-  const verified = new Message(hash).verify(address, signedHash);
-  return verified;
+  return new Message(hash).verify(address, signedHash);
 };
