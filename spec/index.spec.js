@@ -67,4 +67,19 @@ describe("Hash payload", function() {
     });
   });
 
+  describe.only("signTransaction", function () {
+    it("Returns signed transaction", function (done) {
+      let rawtx = [
+        "00740000010519166622566dd099f7e7a92dbfe99a01e5cca4b6df5fab080af3871473220e0000000000feffffff02f1020000000000005e515140663535656334613033663631653535356461386262306334313161326637613863373134316666383562656235643334303539376563303130343935643131336d7576a9141e562df71feef0de16fa0dffc4938a46e999069b88ac559b724e180900001976a914f4c4a7778ef5ff88505b4e939434451f780451d388ac21d90000",
+        "TCjcWg49DSStVU8ZLknorcMNxJBNmGCc9c"
+      ];
+
+      let signedTx = syscoinAuth.signTransaction(rawtx, privateKey);
+
+      console.log("raw:" + rawtx);
+      console.log("signed:" + signedTx);
+      done();
+    });
+  });
+
 });
