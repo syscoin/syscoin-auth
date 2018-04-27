@@ -52,5 +52,9 @@ module.exports.verifySignature = function(hash, signedHash, address) {
 };
 
 module.exports.signTransaction = function(rawTx, privkey) {
-  return new bitcore.Transaction(rawTx);
+  const address = privkey.toAddress();
+  console.log(address);
+  const tx = new bitcore.Transaction();
+  tx.from(address);
+  console.log(tx);
 };
