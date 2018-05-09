@@ -50,11 +50,3 @@ module.exports.verifyHash = function(payload, hash) {
 module.exports.verifySignature = function(hash, signedHash, address) {
   return new Message(hash).verify(address, signedHash);
 };
-
-module.exports.signTransaction = function(rawTx, privkey) {
-  const address = privkey.toAddress();
-  console.log(address);
-  const tx = new bitcore.Transaction();
-  tx.from(address);
-  console.log(tx);
-};
